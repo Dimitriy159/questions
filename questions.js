@@ -68,8 +68,9 @@ function Sum(firstNumber, secondNumber){
 	var _firstNumber=0;
 	var _secondNumber=0;
 	this.result=0;
+	var self=this;
 	function culc(){
-		this.result = firstNumber + secondNumber;
+		self.result = _firstNumber + _secondNumber;
 	};
 	culc();
 	function valid1(firstNumber){
@@ -98,7 +99,8 @@ function Sum(firstNumber, secondNumber){
 	};
 }
 var sum = new Sum(23, 17);
-sum.culc();
+console.log(sum.result);
 sum.firstNumber(17);
 sum.secondNumber(13);
 console.log(sum.result);
+
