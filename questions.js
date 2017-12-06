@@ -70,7 +70,7 @@ function Sum(firstNumber, secondNumber){
 	this.result=0;
 	var self=this;
 	function culc(){
-		self.result = _firstNumber + _secondNumber;
+		self.result = _firstNumber + _secondNumber;// почему теряется контекст?
 	};
 	culc();
 	function valid1(firstNumber){
